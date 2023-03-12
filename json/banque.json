@@ -1,0 +1,32 @@
+{
+    "hoodie-list":
+    [
+        {
+            "id": 0,
+            "nom": "Pull Or Push",
+            "prix": 300,     
+            "calque1":"../images/c0/mauve2.png"
+        },
+        {
+            "id": 1,
+            "nom": "Pull Faded",
+            "prix": 200,     
+            "calque1":"../images/c0/mauve3.png"
+        },
+        {
+            "id": 2,
+            "nom": "Pull Zen",
+            "prix": 100,     
+            "calque1":"../images/c0/mauve4.png"
+        }
+    ],
+
+    "logo-list":
+        {
+            "adidas":"../images/c1/adidas.png",
+            "mcdo":"../images/c1/mcdo.png",
+            "nike":"../images/c1/nike.png",
+            "offwhite":"../images/c1/offwhite.png",
+            "yop":"../images/c1/yop.png"
+        }
+}

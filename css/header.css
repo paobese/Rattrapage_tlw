@@ -1,0 +1,381 @@
+body { 
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+/* Couleur / taille header */
+
+.header {
+    overflow: hidden;
+    background-color: #9900ff7e;
+    padding: 1vw 10px;
+  }
+
+/* Style des liens */
+
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+/* Stle lien logo */
+
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  /* Change la couleur quand tu passes la souris */
+
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Style du lien de la page actuelle */
+
+  .header a.active {
+    background-color: rgb(174, 0, 255);
+    color: white;
+  }
+
+  /* Met les liens a droite */
+
+  .header-right {
+    float: right;
+  }
+
+  /* Ajoute de la réponse / Empile les liens quand la fenêtre fait moins de 500px */
+
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+
+/* Divise la page en 3 colonnes */
+  
+
+
+.grid-container > div {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/* Style du footer */
+
+footer {
+    text-align: center;
+    padding: 5vw;
+    background-color: rgb(204, 188, 181);
+    color: white;
+}
+
+/* Style du texte */
+
+#nomdiv {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+h1  {
+  color: #cc00ff;
+  width: 100%;
+}
+
+
+/* Permet de mettre un cadre autour du texte */
+
+p.round3 {
+  border: 2px solid rgb(208, 0, 255);
+  border-radius: 12px;
+  padding: 5px;
+}
+
+input[type=text], textarea, input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(153, 0, 255);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-right: 0px;
+  margin-left: 0px;
+  resize: vertical;
+}
+
+
+
+label{margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;}
+
+input[type=submit] {
+  background-color: #cc00ff;
+  color: rgb(255, 255, 255);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #cc00ff;
+}
+
+.button-mauve {
+  border: 2px solid #000000;
+  padding: 12px 50px;
+  background: #ffffff;
+  color: #de00d7;
+  -webkit-transition: all 0.7s ease-out 0s;
+  -moz-transition: all 0.7s ease-out 0s;
+  transition: all 0.7s ease-out 0s;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+
+  }
+  .button-mauve:hover {
+  background: #d400d8;
+  color: #ffffff;
+  border: 2px solid #000000;
+  }
+
+.button-rouge {
+  border: 2px solid #000000;
+  padding: 12px 50px;
+  background: #ffffff;
+  color: red;
+  -webkit-transition: all 0.7s ease-out 0s;
+  -moz-transition: all 0.7s ease-out 0s;
+  transition: all 0.7s ease-out 0s;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  
+  }
+  .button-rouge:hover {
+  background: red;
+  color: #ffffff;
+  border: 2px solid #000000;
+  }
+
+
+.button-mauve {
+  border: 2px solid #000000;
+  padding: 12px 50px;
+  background: #ffffff;
+  color: #de00d7;
+  -webkit-transition: all 0.7s ease-out 0s;
+  -moz-transition: all 0.7s ease-out 0s;
+  transition: all 0.7s ease-out 0s;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+
+  }
+  .button-mauve:hover {
+  background: #d400d8;
+  color: #ffffff;
+  border: 2px solid #000000;
+  }
+
+.button-vert {
+  border: 2px solid #000000;
+  padding: 12px 50px;
+  background: #ffffff;
+  color: rgb(9, 131, 0);
+  -webkit-transition: all 0.7s ease-out 0s;
+  -moz-transition: all 0.7s ease-out 0s;
+  transition: all 0.7s ease-out 0s;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  
+  }
+  .button-vert:hover {
+  background: rgb(31, 133, 0);
+  color: #ffffff;
+  border: 2px solid #000000;
+  }
+
+
+  /*Style payement panier*/
+
+  body {
+    font-family: Arial;
+    font-size: 17px;
+    padding: 8px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  a {
+    color: #2196F3;
+  }
+  
+  hr {
+    border: 1px solid lightgrey;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+
+
+
+
+
+/* updated CSS */
+.grid-container {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px; /* écart entre chaque élément */
+  margin: auto;
+  width: 80%;
+}
+
+.item1 {
+  grid-column: 1/3;
+  text-align: center;
+  font-weight: bold;
+}
+
+.item2, .item3, .item4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* espaces moyens entre l'image et les informations */
+}
+
+.item2 img, .item3 img, .item4 img {
+  width: 250px; /* taille d'image agrandie */
+  height: auto;
+}
+
+.nompro {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.prix {
+  font-weight: bold;
+}
+
+.product {
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.product-image {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.product-info {
+    flex: 1 1 auto;
+    text-align: right;
+}
+
+

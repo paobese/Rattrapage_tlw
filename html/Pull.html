@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique mauvementés</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <script defer src="../js/template.js"></script>
+</head>
+
+
+
+<body>
+    <div class="header">
+        <a href="../html/Projet.html"><img src="../images/Snapchat-296443024(1).jpg" width="200" height="200"></a>
+        <div class="header-right">
+            <a class="active" href="../html/Projet.html">Home</a>
+            <a href="../html/Contact us.html">Contact</a>
+            <a href="../html/Panier.html">Panier</a>
+        </div>
+    </div>
+
+    
+    <div id="nomdiv" class="detailPull">
+        <div class="nompro" id="nom"></div>
+        <div id="image-produit"><img id="image" src="" style="height: 300px;"></div>
+        <p>Prix: <span id="prix"></span>€</p>
+        <p>Une fois votre choix fait, veuillez rentrer ci-dessous les caractéristique de votre commande (collab, taille et quantité) </p>
+        <p>N'oubliez pas de valider vos choix en cliquant sur "Ajouter au panier"</p>
+        <label for="collab">Choix de la collab : </label>
+        <select name="collab" id="collab" onchange="generation_image(this);">
+            <option value="../images/c1/addidas.png">Adidas</option>
+            <option value="../images/c1/mcdo.png">Macdonald</option>
+            <option value="../images/c1/nike.png">Nike</option>
+            <option value="../images/c1/offwhite.png">Off White</option>
+            <option value="../images/c1/yop.png">Yop</option>
+        </select>
+        
+        <!--<button id="bouton1">Valider</button>-->
+        <br>
+        <br>
+        <br>
+        <label for="taille">Choix de la taille : </label>
+        <select name="taille" id="taille">
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+        </select>
+        <!--<button id="bouton2">Valider</button>-->
+        <br>
+        <br>
+        <br>
+        <label for="quantité">Choix de la quantité : </label>
+        <input type="text" id="quantite" placeholder=" 1  2  3  4  5  6  ...">
+        <!--<button id="bouton3">Valider</button>-->
+        <br>
+        <br>
+        <button class="button-mauve" onclick="ajouter_panier();">Ajouter au panier</button>
+        <br>
+    </div>
+    <br>
+    <br>
+
+    <button mg class="button-mauve" onclick="window.scrollTo(0, 0);">Revenir en haut</button>
+    <br>
+    <br>
+    <footer>
+    <!-- Le code du footer sera injecté ici via le template.js -->
+    </footer>
+</body>
+
+</html>
